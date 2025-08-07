@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manoslib"
+version = "0.1.0"
+description = "A collection of snippets I usually use and have to repeat writing them every time"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.5",
+    "pip>=25.2",
+    "scipy>=1.15.3",
+]
+authors = [
+	{ name = "Emmanouil Theofanis Chourdakis", email="etchourdakis@gmail.com"},
+
+]
+[tool.setuptools.packages.find]
+where = ["src"]
